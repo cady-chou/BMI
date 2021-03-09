@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>身高體重指數</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<style>
+    .row {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    @media (max-width:878px) {
+        .row {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    
+    @media (max-width:414px) {
+        .row {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    
+    .card {
+        text-align: center;
+        border: 3px solid #566f31;
+        border-radius: 38px;
+        margin-top: -16px;
+    }
+    
+    .bmi-img {
+        background-image: url(./bmi表-網頁.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 400px;
+        margin-bottom: 50px;
+    }
+    
+    @media (max-width:768px) {
+        .bmi-img {
+            background-image: url(./bmi表-手機.png);
+        }
+        .card-text {
+            font-size: 14px;
+        }
+    }
+    
+    .heho-img {
+        background-image: url(./heho封面.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 200px;
+    }
+    
+    .btn-success {
+        background-color: #566f31;
+        margin-top: 20px;
+    }
+    
+    .mt-10 {
+        margin-top: 10px;
+    }
+    
+    input {
+        width: 60%;
+    }
+</style>
+
+<body>
+    <div class="row">
+        <div class="col-lg-12">
+            <br>
+            <div class="heho-img"></div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">身高體重指數</h5>
+                    <p>(Body Mass Index, 簡稱BMI)</p>
+                    <p class="card-text">
+                        BMI值計算公式＝體重(公斤)÷身高(公尺)÷身高(公尺)
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-12 mt-10">
+                            <label for="height">身高</label>
+                            <input type="number" id="height"> 公分
+                        </div>
+                        <div class="col-lg-12 mt-10">
+                            <label for="weight">體重</label>
+                            <input type="number" id="weight"> 公斤
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-success btn-rounded">開始計算</button>
+                </div>
+
+                <p>BMI 結果：</p>
+            </div>
+        </div>
+        <br>
+        <p style="text-align: center;margin-top: 16px;">我是18歲（含）以上的成人，要如何判斷體重是否正常？</p>
+        <div class="bmi-img"></div>
+    </div>
+    </div>
+</body>
+
+</html>
